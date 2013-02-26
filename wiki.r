@@ -28,7 +28,13 @@ plot(time,type='h')
 # weekends average
 time=read.table("2_output_weekend.txt", header=TRUE,sep="\t")
 plot(time,type='h')
+# weekdays & weekends
+time1=read.table("2_output_wdays_wends.txt", header=TRUE,sep="\t")
+plot(time1$Weekdays, type="l", col=plot_colors[1], ylim=range(time),ylab="Counts",xlab="Hours")
+lines(time1$Weekends, type="l", col=plot_colors[5])
+legend("topleft",names(time1[2:3]), cex=0.8, col=c("red","blue"), bty="n", lwd=1)
 # days in a week
+time=read.table("2_output_wdays.txt", header=TRUE,sep="\t")
 plot_colors <- c("red","orange","brown","green","blue","purple","black")
 plot(time$Mon, type="l", col=plot_colors[1], ylim=range(time),ylab="Counts",xlab="Hours")
 lines(time$Tue, type="l", col=plot_colors[2])
