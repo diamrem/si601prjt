@@ -1,0 +1,1 @@
+gource --seconds-per-day 0.001 -i 20 -a 4 --user-scale 0.3 --font-size 15 --max-user-speed 80 --hide usernames,filenames --title "Partial history of Wikipedia" --date-format "%b-%d-%Y" -o gource_small.ppm gource_log_chronic 
