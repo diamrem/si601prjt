@@ -40,7 +40,7 @@ def export_revision():
                     print count, ' are written so far...'
 
 def export_gource_log():
-    with open('gource_log_fresh', 'w') as output, \
+    with open('./animation/gource_log_all', 'w') as output, \
          open('./unique_page_id.txt') as f:
         for line in f:
             count = 0

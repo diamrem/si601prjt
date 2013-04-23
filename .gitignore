@@ -1,8 +1,11 @@
+.DS_Store
 *.swp
 *.pyc
 *.png
 *.jpg
 *.jpeg
 *.db
+*.tsv
 dumps
 tmp
+animation/gource*
